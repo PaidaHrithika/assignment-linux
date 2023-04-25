@@ -1,0 +1,24 @@
+The command to print the following are.....
+
+1. home directory 
+	--> First use cd /home to go to home
+	-->Then use cd command
+
+2. current working directory
+	-->pwd
+
+3. OS name & version
+	-->uname -r
+
+4. CPU information
+	-->lscpu
+
+5. Storage information
+	-->df 
+	-->du
+
+6. Currently running process
+	-->ps
+
+7. PID of your running shell script
+	-->echo $$

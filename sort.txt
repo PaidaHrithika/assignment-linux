@@ -1,0 +1,55 @@
+#! /bin/bash
+
+echo "Enter the how many numbers you want: "
+read n
+
+echo "Enter the numbers in array : "
+
+for (( i=0 ; i < $n ; i++ ))
+do
+read num[$i]
+done
+
+#sorting in descending
+
+for (( i=o ; i < $n ; i++ ))
+do
+for (( j = $i ; j< $n ; j++ ))
+do
+if [ ${num[$i]} -lt ${num[$j]} ]
+then
+temp=${num[$i]}
+num[$i]=${num[$j]}
+num[$j]=$temp
+fi
+done
+done
+
+echo "The numbers in descending order are: "
+for (( i=0 ; i < $n ; i++ ))
+do
+echo ${num[$i]}
+done
+
+
+#sorting in ascending
+
+for (( i=o ; i < $n ; i++ ))
+do
+for (( j = $i ; j< $n ; j++ ))
+do
+if [ ${num[$i]} -gt ${num[$j]} ]
+then
+temp=${num[$j]}
+num[$j]=${num[$i]}
+num[$i]=$temp
+fi
+done
+done
+
+echo "The numbers in ascending order are: "
+for (( i=0 ; i < $n ; i++ ))
+do
+echo ${num[$i]}
+done
+
